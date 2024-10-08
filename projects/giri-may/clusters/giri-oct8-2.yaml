@@ -6,7 +6,7 @@ metadata:
 spec:
   blueprintConfig:
     name: bp-oct8
-    version: managed
+    version: np1
   cloudCredentials: giri-aks
   config:
     kind: aksClusterConfig
