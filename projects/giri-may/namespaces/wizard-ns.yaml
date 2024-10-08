@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  annotations:
+    rafay.dev/description: cddcd
+  description: cddcd
+  name: wizard-ns
+  project: giri-may
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-oct8
+    - key: rafay.dev/clusterName
+      value: giri-oct8-2
+  resourceQuotas: {}
