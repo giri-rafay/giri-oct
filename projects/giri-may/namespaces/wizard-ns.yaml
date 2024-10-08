@@ -13,10 +13,30 @@ spec:
     container: {}
     pod: {}
   namespaceMeshPolicyParams: {}
+  networkPolicyParams:
+    networkPolicyEnabled: true
+    policies:
+    - name: finance-policy
+      version: version1
   placement:
     labels:
     - key: rafay.dev/clusterName
       value: giri-oct8
     - key: rafay.dev/clusterName
       value: giri-oct8-2
-  resourceQuotas: {}
+  resourceQuotas:
+    configMaps: "200"
+    cpuLimits: 100m
+    cpuRequests: 25m
+    gpuLimits: "200"
+    gpuRequests: "200"
+    memoryLimits: 200Mi
+    memoryRequests: 100Mi
+    persistentVolumeClaims: "10"
+    pods: "200"
+    replicationControllers: "50"
+    secrets: "10"
+    services: "10"
+    servicesLoadBalancers: "10"
+    servicesNodePorts: "10"
+    storageRequests: 200Gi
