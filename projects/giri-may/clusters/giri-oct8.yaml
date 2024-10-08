@@ -5,7 +5,7 @@ metadata:
   project: giri-may
 spec:
   blueprintConfig:
-    name: default-aks
+    name: minimal
   cloudCredentials: giri-aks
   config:
     kind: aksClusterConfig
