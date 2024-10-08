@@ -4,6 +4,8 @@ metadata:
   annotations:
     rafay.dev/description: cddcd
   description: cddcd
+  labels:
+    env: qa
   name: wizard-ns
   project: giri-may
 spec:
