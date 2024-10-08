@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: xwing
+  project: giri-may
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/xwing/xwing.yaml
+    type: Yaml
+  namespace: giri-ns1
+  placement:
+    selector: rafay.dev/clusterName in (giri-oct3-1,giri-oct3-2)
+  version: xwing-v1-202410030801480000

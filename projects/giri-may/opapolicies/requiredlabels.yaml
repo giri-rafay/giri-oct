@@ -1,0 +1,10 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: OPAPolicy
+metadata:
+  name: requiredlabels
+  project: giri-may
+spec:
+  constraintList:
+  - name: requiredlabels
+    version: version1
+  version: v1

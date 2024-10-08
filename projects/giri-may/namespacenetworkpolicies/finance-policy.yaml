@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: NamespaceNetworkPolicy
+metadata:
+  name: finance-policy
+  project: giri-may
+spec:
+  rules:
+  - name: finance-rule
+    version: version1
+  version: version1

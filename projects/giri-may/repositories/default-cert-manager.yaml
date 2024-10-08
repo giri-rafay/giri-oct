@@ -1,0 +1,16 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: default-cert-manager
+  project: giri-may
+spec:
+  endpoint: https://github.com/jetstack/cert-manager.git
+  options: {}
+  type: Git
+status:
+  projects:
+  - projectId: kno93l2
+    repositoryId: knrge42
+  webhookConfig:
+    webhookSecret: 05a14376330747de2b1b4422b594e6c0593a230b9882c5007dd5c628cc45131e
+    webhookURL: https://qc-console.stage.rafay.dev/v2/config/webhook/repository/knrge42

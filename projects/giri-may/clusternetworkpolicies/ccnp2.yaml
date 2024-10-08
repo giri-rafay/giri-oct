@@ -1,0 +1,10 @@
+apiVersion: security.k8smgmt.io/v3
+kind: ClusterNetworkPolicy
+metadata:
+  name: ccnp2
+  project: giri-may
+spec:
+  rules:
+  - name: cnpr
+    version: v2
+  version: v2
