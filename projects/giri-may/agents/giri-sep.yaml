@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: giri-sep
+  project: giri-may
+spec:
+  active: true
+  cluster:
+    name: giri-az-sep9-1
+  type: Cluster
+  version: r2.10.0
