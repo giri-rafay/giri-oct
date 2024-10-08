@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  labels:
+    k8smgmt.io/project: giri-may
+    kubernetes.io/metadata.name: production
+    name: production
+    rep-cluster: k6w8jgm
+    rep-cluster-name: giri-oct8-2
+    rep-drift-reconcillation: disabled
+    rep-organization: 7w2lnkp
+    rep-partner: rx28oml
+    rep-placement: 2dx0ygk
+    rep-project: kno93l2
+    rep-project-name: giri-may
+    rep-workload: xwing
+    rep-workloadid: kejr1jm
+  name: production
+  project: giri-may
+spec:
+  resourceQuotas: {}

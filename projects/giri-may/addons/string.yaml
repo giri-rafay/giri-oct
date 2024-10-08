@@ -1,0 +1,11 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: string
+  project: giri-may
+spec:
+  artifact:
+    artifact: {}
+    type: Helm
+  namespace: string
+  sharing: {}
