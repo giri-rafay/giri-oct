@@ -1,0 +1,10 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: mks-xwing
+  project: giri-may
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: mks-ns
