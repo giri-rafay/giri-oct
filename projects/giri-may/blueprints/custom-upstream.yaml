@@ -4,6 +4,37 @@ metadata:
   name: custom-upstream
   project: giri-may
 spec:
+  base:
+    name: default-upstream
+    version: 2.11.0
+  componentsCriticality:
+  - name: network-policy
+  - name: cost-profile
+  costProfile:
+    name: default-cost-profile-azure
+    version: version-1728117369
+  customAddons:
+  - name: metallb-config
+    version: v1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    enableRookCeph: true
   driftWebhook:
     enabled: true
+  namespaceConfig:
+    enableSync: true
+    syncType: Unmanaged
+  networkPolicy:
+    profile:
+      name: default
+      version: latest
+  opaPolicy:
+    opaPolicy:
+    - name: requiredlabels
+      version: v1
+    profile:
+      name: default
+      version: latest
   type: custom
+  version: v1
