@@ -1,0 +1,25 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  annotations:
+    rafay.dev/description: ""
+    rep-drift-action: deny
+  labels:
+    k8smgmt.io/project: giri-may
+    k8smgmt.io/update-time: "1728438316802152333"
+    kubernetes.io/metadata.name: karpenter
+    name: karpenter
+    rep-addon: karpenter-addon
+    rep-cluster: kgj6djk
+    rep-cluster-name: giri-oct8
+    rep-drift-reconcillation: disabled
+    rep-organization: 7w2lnkp
+    rep-partner: rx28oml
+    rep-placement: kzeqlvk
+    rep-project: kno93l2
+    rep-project-name: giri-may
+    rep-workloadid: m1jeoym
+  name: karpenter
+  project: giri-may
+spec:
+  resourceQuotas: {}
