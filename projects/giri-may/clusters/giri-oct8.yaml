@@ -5,8 +5,7 @@ metadata:
   project: giri-may
 spec:
   blueprintConfig:
-    name: rctl-karpenter-bp
-    version: v1
+    name: default-aks
   cloudCredentials: giri-aks
   config:
     kind: aksClusterConfig
