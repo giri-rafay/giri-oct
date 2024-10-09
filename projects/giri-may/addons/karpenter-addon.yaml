@@ -1,0 +1,22 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  annotations:
+    rafay.dev/audit_type: CLI||RCTL/r2.10.0 darwin/amd64
+    rafay.dev/audit_user: giridharaprasad@rafay.co
+    rafay.dev/audit_user_group: All Local Users,Organization Admins,giri
+  name: karpenter-addon
+  project: giri-may
+spec:
+  artifact:
+    artifact:
+      catalog: default-rafay
+      chartName: karpenter
+      chartVersion: v0.27.0
+    options:
+      maxHistory: 1
+      timeout: 1m0s
+    type: Helm
+  namespace: karpenter
+  sharing: {}
+  version: v1
