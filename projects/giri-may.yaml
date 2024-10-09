@@ -3,8 +3,9 @@ kind: Project
 metadata:
   name: giri-may
 spec:
-  clusterResourceQuota:
-    cpuRequests: 10m
-  defaultClusterNamespaceQuota:
-    cpuRequests: 3m
-  driftWebhook: {}
+  clusterResourceQuota: {}
+  defaultClusterNamespaceQuota: {}
+  driftWebhook:
+    enabled: true
+  syncExcludedNamespaces:
+  - test
