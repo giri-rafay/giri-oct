@@ -5,6 +5,11 @@ metadata:
   project: giri-may
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/mks-xwing/mks-xwing.yaml
     type: Yaml
   namespace: mks-ns
+  placement:
+    selector: rafay.dev/clusterName=giri-mks-oct9
+  version: mks-xwing-v1-202410090542350000
