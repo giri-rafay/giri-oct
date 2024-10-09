@@ -5,7 +5,8 @@ metadata:
   project: giri-may
 spec:
   blueprint:
-    name: default-upstream
+    name: custom-upstream
+    version: v1
   config:
     installerTtl: 365
     kubernetesVersion: v1.30.4
