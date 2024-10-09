@@ -10,4 +10,14 @@ spec:
   artifact:
     path:
       name: file://system-test/system-test.yaml
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: giri-oct8
+    - key: rafay.dev/clusterName
+      value: giri-oct8-2
   resourceQuotas: {}
