@@ -1,6 +1,8 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
+  annotations:
+    rafay.dev/description: ""
   labels:
     k8smgmt.io/project: giri-may
     kubernetes.io/metadata.name: production
@@ -18,4 +20,5 @@ metadata:
   name: production
   project: giri-may
 spec:
+  namespaceMeshPolicyParams: {}
   resourceQuotas: {}

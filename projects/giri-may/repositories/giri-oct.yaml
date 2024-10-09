@@ -5,7 +5,7 @@ metadata:
   project: giri-may
 spec:
   agents:
-  - name: giri-oct
+  - name: giri-new-oct
   credentials:
     password: sealed://credentials.password
     username: giri-rafay
@@ -17,8 +17,8 @@ spec:
   type: Git
 status:
   agents:
-  - id: kj3850m
-    name: giri-oct
+  - id: k5xwgy2
+    name: giri-new-oct
   projects:
   - projectId: kno93l2
     repositoryId: ker1ez2

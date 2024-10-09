@@ -3,17 +3,22 @@ kind: Namespace
 metadata:
   annotations:
     rafay.dev/description: ""
-  labels:
-    kubernetes.io/metadata.name: man
-  name: man
+  name: ns-repo
   project: giri-may
 spec:
-  drift:
-    action: Deny
-    enabled: true
+  artifact:
+    path:
+      name: ns-repo.yaml
+    repository: giri-oct
+    revision: main
+  limitRange:
+    container: {}
+    pod: {}
   namespaceMeshPolicyParams: {}
   placement:
     labels:
+    - key: rafay.dev/clusterName
+      value: giri-oct8
     - key: rafay.dev/clusterName
       value: giri-oct8-2
   resourceQuotas: {}
