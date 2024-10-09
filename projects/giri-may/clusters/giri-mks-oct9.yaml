@@ -1,0 +1,28 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Cluster
+metadata:
+  name: giri-mks-oct9
+  project: giri-may
+spec:
+  blueprint:
+    name: minimal
+  config:
+    installerTtl: 365
+    kubernetesVersion: v1.30.4
+    network:
+      cni:
+        name: Calico
+        version: 3.28.1
+      podSubnet: 10.244.0.0/16
+      serviceSubnet: 10.96.0.0/12
+    nodes:
+    - arch: amd64
+      hostname: giri-oct9-mks
+      operatingSystem: Ubuntu20.04
+      privateIP: 10.0.0.197
+      roles:
+      - Storage
+      - Worker
+      - ControlPlane
+  proxy: {}
+  type: mks
